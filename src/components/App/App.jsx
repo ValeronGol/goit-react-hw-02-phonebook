@@ -26,7 +26,7 @@ class App extends Component {
       ];
       return this.setState({ ...this.state, contacts: arrayCont });
     } else {
-      alert(`${data.name}вже є у телефонній книзі!!!`);
+      alert(`${data.name} вже є у телефонній книзі!!!`);
     }
   };
 
