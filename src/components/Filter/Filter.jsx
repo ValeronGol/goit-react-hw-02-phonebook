@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import { Conteiner, Title, Input } from './Filter.styled';
 
 class Filter extends Component {
   setFilterValue = event => {
@@ -9,10 +10,10 @@ class Filter extends Component {
 
   render() {
     return (
-      <div>
-        <h4>Find contacts by name</h4>
-        <input onChange={this.setFilterValue}></input>
-      </div>
+      <Conteiner>
+        <Title>Find contacts by name</Title>
+        <Input onChange={this.setFilterValue}></Input>
+      </Conteiner>
     );
   }
 }

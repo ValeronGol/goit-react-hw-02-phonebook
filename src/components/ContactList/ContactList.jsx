@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import { List } from './ContactList.styled';
+
 import { v4 as uuidv4 } from 'uuid';
 
 class ContactList extends Component {
@@ -23,7 +25,7 @@ class ContactList extends Component {
   };
 
   render() {
-    return <ul>{this.createList()}</ul>;
+    return <List>{this.createList()}</List>;
   }
 }
 ContactList.propTypes = {
