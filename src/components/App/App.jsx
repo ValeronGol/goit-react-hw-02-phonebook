@@ -68,7 +68,7 @@ class App extends Component {
         <Filter setFilterToState={this.setFilterToState} />
         <ContactList
           contacts={this.filterArr(this.state.contacts)}
-          del={this.deleteContactFromContactList}
+          onDelete={this.deleteContactFromContactList}
         />
       </Conteiner>
     );
